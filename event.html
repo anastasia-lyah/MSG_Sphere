@@ -1,79 +1,136 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
         <title>MSG Sphere - Заплануйте візит</title>
     </head>
-    <body bgcolor="#000000" text="#efefef" link="efefef" vlink="#efefef" alink="#b7b7b7">
-     <font face="Arial" size="4">
-        <p align="right">
-            <a href="index.html" title="Для переходу натисніть" >Меню</a>
-            <a href="main.html" title="Для переходу натисніть" >Головна сторінка</a>
-            <a href="description.html" title="Для переходу натисніть">Таємниці</a>
-            <a href="foto.html" title="Для переходу натисніть">Галерея</a>
-            <a href="event.html" title="Для переходу натисніть">Заплануйте візит</a></p> 
-        <h1>Заплануйте візит</h1>
-        <h2 align="center">Відвідайте справжнє шоу</h2>
-        <h5 align="center"> за адресою 255 Сандс Авеню, Лас-Вегас, Невада, США</h5>
-        <hr color="#0f6381" width="90%" size="3px"><br>
-        <img src="media/карта.png" width="600px" align="center">
-        <ul type="disc">
-            <li>Адреса: 255 Сандс Авеню, Лас-Вегас, Невада, США</li>
-            <li>Власник: Madison Square Garden Entertainment</li>
-            <li>Івенти: спортивні події, концерти, церемонії нагородження, фільми,
-                 презентації продуктів та "світлові" шоу на вулиці</li>
-        </ul>
-        <hr color="#0f6381" width="90%" size="3px"><br>
-        <h2 align="center">Майбутні шоу</h2>
-        <img src="media/концерт1.png" width="350px" align="right">
-        <h3>Phish</h3>
-        <p>18-21 КВІТНЯ 2024 (4 КОНЦЕРТИ)<br>
-            Як добре відомо шанувальникам Phish, за сорок років існування гурту, вони ніколи не грали один
-             і той самий концерт двічі. Кожен з чотирьох концертів Phish у Sphere матиме абсолютно унікальний
-              сет-лист та візуальне оформлення, що зробить кожне шоу справді унікальним аудіо-візуальним досвідом, 
-              який можна буде побачити лише раз у житті. Ці концерти знаменують початок нових відносин між Phish та Sphere,
-               але вони стануть єдиними концертами Phish у цьому закладі у 2024 році. </p><br><br><br><br><br><br>
-         <h2>КВІТЕНЬ 2024</h2>
-         <!--<hr color="#efefef" width="40%" size="1px"><br> -->
-         <p align="center">
-            <ol>
-                <li>КВІТ 18 | ЧТ 19:30</li>
-                <li>КВІТ 19 | ПТ 19:30</li>
-                <li>КВІТ 20 | СБ 19:30</li>
-                <li>КВІТ 21 | НД 19:30</li>
-            </ol>
-        </p>
-        <a href="https://www.ticketmaster.com/artist/3053685?venueId=189524" title="Для переходу натисніть">
-            <p align="center">
-            <img src="media/кнопка_купити_квитки.png" width="500pt" ></a><br></p>
-            <hr color="#0f6381" width="90%" size="3px"><br>
-         <img src="media/концерт2.png" width="350px" align="right">         
-        <h3>Dead & Company</h3>
-        <p>16 ТРАВНЯ - 13 ЛИПНЯ 2024 (24 КОНЦЕРТИ)<br>
-            Dead & Company оголосили про резиденцію у Sphere, яка складатиметься з 24 концертів з 16 травня по 13 липня.
-             На резиденції у Sphere буде представлено ніколи раніше не бачене візуальне оповідання від Dead & Company,
-              що забезпечить фанатам максимальний зв'язок з музикою через ці інноваційні та захоплюючі шоу. 
-               На кожному з трьох виступів кожного вікенду буде представлено унікальний сет-лист.</p><br><br><br><br>
-         <!--<h2 align="center">ТРАВЕНЬ 2024</h2>
-         <hr color="#efefef" width="40%" size="1px"><br>-->
-         <ul type="disc"></ul>
-            <li>ТРАВЕНЬ 2024</li>
-                <ol>
-                    <li>ТРАВ 16  | ЧТ  19:30</li>
-                    <li>ТРАВ 17  | ПТ  19:30</li>
-                    <li>ТРАВ 18 | СБ   19:30</li>
-                    <li>ТРАВ 24 | ПТ  19:30</li>
-                </ol>
-            <li>ЧЕРВЕНЬ 2024</li>
-                <ol>
-                    <li>ЧЕРВ 1  | СБ   19:30</li>
-                    <li>ЧЕРВ 6  | ЧТ   19:30</li>
-                    <li>ЧЕРВ 7  | ПТ   19:30</li>
-                    <li>ЧЕРВ 8  | СБ   19:30</li>
-                </ol>
-        </ul>
-        <a href="https://www.ticketmaster.com/artist/3053685?venueId=189524" title="Для переходу натисніть">
-            <p align="center">
-            <img src="media/кнопка_купити_квитки.png" width="500pt" ></a><br></p>
-     </font>   
+    <body>
+        <section class="header-banner event">
+            <header class="header">
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="main.html">Головна сторінка</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="description.html">Таємниці</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="foto.html">Галерея</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link  active" href="#">Заплануйте візит</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>        
+            <main class="content">
+                <section class="banner">
+                    <h1 class="banner-title">
+                        <span class="banner-title-text description-text">Заплануйте<br>візит</span>
+                    </h1>
+                </section>
+                <section class="info">                
+                    <h2>Відвідайте справжнє шоу</h2>   
+                    <p class="under-title">за адресою 255 Сандс Авеню, Лас-Вегас, Невада, США</p>  
+                    <a href="https://maps.app.goo.gl/E5NeAyRDSKU81cBa9">
+                        <div class="image-two">
+                            <img src="media/map.png" alt="Карта">
+                        </div>
+                    </a> 
+                    <br>
+                    <hr>
+                    <h2>Майбутні шоу</h2>
+                    <div class="concert-info">
+                        <div class="left-half">
+                            <h4>Phish</h4>
+                            <p class="darkbluetext">18-21 КВІТНЯ 2024 (4 КОНЦЕРТИ)</p>                            
+                            <p>Як добре відомо шанувальникам Phish, за сорок років існування гурту, вони ніколи не грали один
+                                і той самий концерт двічі. Кожен з чотирьох концертів Phish у Sphere матиме абсолютно унікальний
+                                 сет-лист та візуальне оформлення, що зробить кожне шоу справді унікальним аудіо-візуальним досвідом, 
+                                 який можна буде побачити лише раз у житті. Ці концерти знаменують початок нових відносин між Phish та Sphere,
+                                  але вони стануть єдиними концертами Phish у цьому закладі у 2024 році.</p>
+                        </div>
+                        <div class="right-half">
+                            <img src="media/foto-consert1.png">
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <h4>КВІТЕНЬ 2024</h4>
+                        <ul>
+                            <li><span class="date">КВІТ 18 | ЧТ</span> <span>19:30</span></li>
+                            <li><span class="date">КВІТ 19 | ПТ</span> <span>19:30</span></li>
+                            <li><span class="date">КВІТ 20 | СБ</span> <span>19:30</span></li>
+                            <li><span class="date">КВІТ 21 | НД</span> <span>19:30</span></li>
+                        </ul>
+                        <a class="button-link" href="https://www.ticketmaster.com/phish-4day-ticket-418421-valid-all-las-vegas-nevada-04-18-2024/event/17005F742E467A94?camefrom=cfc_sphere&_gl=1*1hwk2wr*_ga*MTk0MDYzODgwNi4xNzEwMzI5NjI0*_ga_MMC2SM4PD6*MTcxMDQyMDY0MS44LjEuMTcxMDQyMTA5MS4wLjAuMA.." target="_blank">
+                            <button class="button">Хочу купити квитки</button>
+                        </a>
+                    <br><br>
+                    </div>
+                    <div class="concert-info">
+                        <div class="left-half">
+                            <h4>Dead & Company</h4>
+                            <p class="darkbluetext">16 ТРАВНЯ - 13 ЛИПНЯ 2024 (24 КОНЦЕРТИ)</p>                            
+                            <p>Dead & Company оголосили про резиденцію у Sphere, яка складатиметься з 24 концертів з 16 травня по 13 липня.
+                                На резиденції у Sphere буде представлено ніколи раніше не бачене візуальне оповідання від Dead & Company,
+                                 що забезпечить фанатам максимальний зв'язок з музикою через ці інноваційні та захоплюючі шоу. 
+                                  На кожному з трьох виступів кожного вікенду буде представлено унікальний сет-лист.</p>
+                        </div>
+                        <div class="right-half">
+                            <img src="media/foto-consert2.png">
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <h4>ТРАВЕНЬ 2024</h4>
+                        <ul>
+                            <li><span class="date">ТРАВ 16 | ЧТ</span> <span>19:30</span></li>
+                            <li><span class="date">ТРАВ 17 | ПТ</span> <span>19:30</span></li>
+                            <li><span class="date">ТРАВ 18 | СБ</span> <span>19:30</span></li>
+                            <li><span class="date">ТРАВ 24 | ПТ</span> <span>19:30</span></li>
+                            <li><span class="date">ТРАВ 25 | СБ</span> <span>19:30</span></li>
+                        </ul>                        
+                        <a class="button-link" href="https://www.ticketmaster.com/artist/2150235?venueId=189524" target="_blank">
+                            <button class="button">Хочу купити квитки</button>
+                        </a>
+                    </div>
+                </section>
+          </main>  
+          <footer>
+            <div class="footer-content">
+                <div class="social-media">
+                    <p class="bluetext">Стежити:</p>
+                    <a href="https://www.youtube.com/@SphereVegas" class="social-icon">
+                        <img src="media/youtube.svg" alt="YouTube">
+                    </a>
+                    <a href="https://www.instagram.com/SphereVegas" class="social-icon">
+                        <img src="media/tiktok.svg" alt="TikTok">
+                    </a>
+                    <a href="https://www.tiktok.com/@spherevegas" class="social-icon">
+                        <img src="media/insta.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.twitter.com/SphereVegas" class="social-icon">
+                        <img src="media/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100088764407477" class="social-icon">
+                        <img src="media/twit.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/company/msg-sphere/" class="social-icon">
+                        <img src="media/linkedin.svg" alt="Linkedin">
+                    </a>
+                </div>
+                <div class="additional-info">
+                    <p class="bluetext">Додаткова інформація:</p>
+                    <p>255 Сандс Авеню, Лас-Вегас, Невада, США</p>
+                    <a class="a-line" href="https://docs.google.com/document/d/1D5Y1I6HPFu-7lUKdwsQK_i60IDybip0kJ3ssl5sWorw/edit?usp=sharing" target="_blank">Використані джерела</a>
+                </div>
+            </div>
+            <div class="author-info">
+                <p>Сайт виготовлений в навчальних цілях<br>©2024 Lyah Anastasia</p>
+            </div>
+        </footer>          
     </body>
 </html>

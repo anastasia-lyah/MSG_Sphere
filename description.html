@@ -1,71 +1,121 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MSG Sphere - Таємниці</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <title>MSG Sphere - Таємниці</title>
     </head>
-    <body bgcolor="#000000" text="#efefef" link="efefef" vlink="#efefef" alink="#b7b7b7">
-    <font face="Arial" size="4">
-        <p align="right">
-            <a href="index.html" title="Для переходу натисніть" >Меню</a>
-            <a href="main.html" title="Для переходу натисніть" >Головна сторінка</a>
-            <a href="description.html" title="Для переходу натисніть">Таємниці</a>
-            <a href="foto.html" title="Для переходу натисніть">Галерея</a>
-            <a href="event.html" title="Для переходу натисніть">Заплануйте візит</a></p> 
-        <h1>Таємниці</h1>
-        <h2 align="center">За межами реальності</h2>
-        <h5 align="center">Щоб створити Сферу, ми застосували деякі математичні формули столітньої давнини, 
-            а також деякі інженерні та технологічні досягнення 22-го століття. </h5>
-        <hr color="#0f6381" width="90%" size="3px">
-        <div class="map">
-            <img src="media/карта посилань.png" usemap="#map">
-            <map name="map">
-                <!--паркінг-->
-                <area shape="rect" coords="0,385, 488,591" 
-                 href="https://media.graphassets.com/vcEYD6aHSNianGWaBDoq"> 
-                 <!--0 поверх-->
-                 <area shape="rect" coords="639,565, 1293,593"
-                 href="https://media.graphassets.com/W0fbguF9T7WLd5jUt48L"> 
-                 <!--1 поверх-->
-                 <area shape="rect" coords="1157,563, 1293,537"
-                 href="https://media.graphassets.com/cRV6krxcSRGrxjgA9CyV">
-                 <!--2 поверх-->
-                 <area shape="rect" coords="1172,534, 1293,510"
-                 href="https://media.graphassets.com/0icN8btSZiQ8vi9Yxpdw"> 
-                 <!--3 поверх-->
-                 <area shape="rect" coords="1180,508, 1293,477"
-                 href="https://media.graphassets.com/iT5ewBtQ8Sh42CETzFry"> 
-                 <!--4 поверх-->
-                 <area shape="rect" coords="1190,475, 1293,449"
-                 href="https://media.graphassets.com/Pp0FwAXRvGm1U4voMwHt"> 
-                 <!--5 поверх-->
-                 <area shape="rect" coords="1193,448, 1293,421"
-                 href="https://media.graphassets.com/ovxI7GkXQXiR3Hb3LtcL"> 
-                 <!--6 поверх-->
-                 <area shape="rect" coords="1193,420, 1293,358"
-                 href="https://media.graphassets.com/vrUOjb01SkGDjlMcilCy"> 
-            </map>
-        </div>
-        <h5 align="center">Поперечний переріз Сфери (Карта посилань) </h5>
-        <hr color="#0f6381" width="90%" size="3px"><br>
-        <img src="media/сфера1.png" align="right" width="500px">
-        <p>Чи знали ви, що багато частин Сфери було спочатку побудовано у віртуальній реальності?</p>
-        <p>Наші інженери та архітектори використовували метод скінченних елементів для перетворення таких рівнянь 
-            у комп'ютерні моделі ключових структур на всьому майданчику — тестуючи їх міцність та функціональність,
-             ще до того, як вони з'явилися в реальному житті.</p>
-        <p>За нашою світлодіодною медіаплощадкою знаходиться 168 000 динаміків, що створюють реалістичну,
-             360-градусну аудіообстановки, використовуючи нову звукову технологію, відому як "синтез хвильового поля".</p><br><br><br><br><br><br><br>
-        <img src="media/сфера2.png" align="left" width="500px">
-        <p>Інфразвук — це звук, який можна відчути, але не почути. Керування інфразвуковими сидіннями та аудіосистемами Сфери
-             дозволяє нам імітувати цілу низку дивовижних, ультрасенсорних ефектів, від припливу до повної зміни гравітації.</p>
-        <p>У Сфері наш величезний світлодіодний екран обгортає аудиторію ззаду та зверху, створюючи повністю іммерсивне візуальне середовище.</p>
-        <p>Ми використовуємо формули проекції об'єктива та математику сферичної тригонометрії для того, щоб відобразити зображення,
-             які ми захоплюємо, на цьому величезному кривому дисплеї.</p><br><br><br><br><br><br>
-         <img src="media/сфера3.png" align="right" width="500px">  
-         <p>Ідеальні налаштування нашої системи кондиціонування і падіння температури дозволять вам відчути себе зануреним у 4D хуртовину.</p> 
-         <p>Хоча ми більш віддаємо перевагу легкому бризу, технічно пристрої Сфери можуть досягати потужних потоків до 225 кілометрів на годину.
-             Цього достатньо, щоб знести дах будівлі!</p> 
-        <p>При відвідуванні Сфери ви, ймовірно, перенесете себе в деякі неймовірні місця, від далеких куточків космосу до дна океану. </p>
-    </font>
+    <body>
+        <section class="header-banner description">
+            <header class="header">
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="main.html">Головна сторінка</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link  active" href="#">Таємниці</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="foto.html">Галерея</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="event.html">Заплануйте візит</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>        
+            <main class="content">
+                <section class="banner">
+                    <h1 class="banner-title">
+                        <span class="banner-title-text description-text">Таємниці</span>
+                    </h1>
+                </section>
+                <section class="info">                
+                    <h2>За межами реальності</h2>   
+                    <p class="under-title">Щоб створити Сферу, ми застосували деякі математичні формули столітньої давнини, 
+                        а також деякі інженерні та технологічні досягнення 22-го століття.</p>  
+                        <div class="image-two">
+                            <img src="media/foto-descript1.jpg">
+                        </div> 
+                    <p>Поперечний переріз Сфери</p>  
+                    <hr>
+                    <div class="container2">
+                        <div class="item">
+                            <div class="text-two">
+                                <p>Чи знали ви, що багато частин Сфери було спочатку побудовано у віртуальній реальності?</p>
+                                <p>Наші інженери та архітектори використовували метод скінченних елементів для перетворення таких рівнянь 
+                                    у комп'ютерні моделі ключових структур на всьому майданчику — тестуючи їх міцність та функціональність,
+                                    ще до того, як вони з'явилися в реальному житті.</p>
+                                <p>За нашою світлодіодною медіаплощадкою знаходиться 168 000 динаміків, що створюють реалістичну,
+                                    360-градусну аудіообстановки, використовуючи нову звукову технологію, відому як "синтез хвильового поля".</p>
+                            </div>
+                            <div class="video">
+                                <iframe width="650" height="335" src="https://www.youtube.com/embed/w8_fS6cGtO4?si=QsNZgg2hMdXYfDx7" title="YouTube video player"
+                                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>                            
+                        </div>
+                        <div class="item">                            
+                            <div class="image">
+                                <img src="media/foto-descript2.jpg">
+                            </div>
+                            <div class="text-two">
+                                <p>Інфразвук — це звук, який можна відчути, але не почути. Керування інфразвуковими сидіннями та аудіосистемами Сфери
+                                    дозволяє нам імітувати цілу низку дивовижних, ультрасенсорних ефектів, від припливу до повної зміни гравітації.</p>
+                               <p>У Сфері наш величезний світлодіодний екран обгортає аудиторію ззаду та зверху, створюючи повністю іммерсивне візуальне середовище.</p>
+                               <p>Ми використовуємо формули проекції об'єктива та математику сферичної тригонометрії для того, щоб відобразити зображення,
+                                    які ми захоплюємо, на цьому величезному кривому дисплеї.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="text">
+                                <p>Ідеальні налаштування нашої системи кондиціонування і падіння температури дозволять вам відчути себе зануреним у 4D хуртовину.</p> 
+                                <p>Хоча ми більш віддаємо перевагу легкому бризу, технічно пристрої Сфери можуть досягати потужних потоків до 225 кілометрів на годину.
+                                    Цього достатньо, щоб знести дах будівлі!</p> 
+                                <p>При відвідуванні Сфери ви, ймовірно, перенесете себе в деякі неймовірні місця, від далеких куточків космосу до дна океану. </p>
+                            </div>
+                            <div class="image">
+                                <img src="media/foto-descript3.png">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+          </main>  
+          <footer>
+            <div class="footer-content">
+                <div class="social-media">
+                    <p class="bluetext">Стежити:</p>
+                    <a href="https://www.youtube.com/@SphereVegas" class="social-icon">
+                        <img src="media/youtube.svg" alt="YouTube">
+                    </a>
+                    <a href="https://www.instagram.com/SphereVegas" class="social-icon">
+                        <img src="media/tiktok.svg" alt="TikTok">
+                    </a>
+                    <a href="https://www.tiktok.com/@spherevegas" class="social-icon">
+                        <img src="media/insta.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.twitter.com/SphereVegas" class="social-icon">
+                        <img src="media/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100088764407477" class="social-icon">
+                        <img src="media/twit.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/company/msg-sphere/" class="social-icon">
+                        <img src="media/linkedin.svg" alt="Linkedin">
+                    </a>
+                </div>
+                <div class="additional-info">
+                    <p class="bluetext">Додаткова інформація:</p>
+                    <p>255 Сандс Авеню, Лас-Вегас, Невада, США</p>
+                    <a class="a-line" href="https://docs.google.com/document/d/1D5Y1I6HPFu-7lUKdwsQK_i60IDybip0kJ3ssl5sWorw/edit?usp=sharing" target="_blank">Використані джерела</a>
+                </div>
+            </div>
+            <div class="author-info">
+                <p>Сайт виготовлений в навчальних цілях<br>©2024 Lyah Anastasia</p>
+            </div>
+        </footer>          
     </body>
 </html>

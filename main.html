@@ -1,60 +1,138 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
         <title>MSG Sphere - Головна</title>
     </head>
-    <body bgcolor="#000000" text="#efefef" link="efefef" vlink="#efefef" alink="#b7b7b7">
-        <font face="Arial" size="4">
-        <p align="right">
-        <a href="index.html" title="Для переходу натисніть" >Меню</a>
-        <a href="main.html" title="Для переходу натисніть" >Головна сторінка</a>
-        <a href="description.html" title="Для переходу натисніть">Таємниці</a>
-        <a href="foto.html" title="Для переходу натисніть">Галерея</a>
-        <a href="event.html" title="Для переходу натисніть">Заплануйте візит</a></p>       
-        <h1>MSG Sphere</h1>
-        <a href="https://www.ticketmaster.com/artist/3053685?venueId=189524" title="Для переходу натисніть">
-            <p align="center">
-            <img src="media/кнопка_купити_квитки.png" width="500pt" ></a><br></p>
-            <!--<h2 align="center">MSG Сфера у Лас-Вегасі - це</h2>
-            <hr color="#0f6381" width="90%" size="3px">-->
-            <table border="2" width="80%" align="center">
-                <caption>MSG Сфера у Лас-Вегасі - це </caption>
-                <tbody>
-                    <tr>
-                        <td align="center" width="20%" height="125px">81 290 м²<br>Площа купола</td>
-                        <td align="center" width="20%">53 884 м²<br> Розмір зовнішнього<br> світлодіодного дисплею</td>
-                        <td align="center" width="20%">14 864 м²<br> Розмір внутрішнього<br> екрану з LED-підсвіткою,<br> 16К дисплей</td>
-                        <td align="center" width="20%">~13 000 тонн<br> Вага купола</td>
-                    </tr>
-                    <tr>
-                        <td align="center" height="125px" colspan="2">18 600 Сидячих місць та 20 000 Стоячих місць</td>                       
-                        <td align="center">23<br> Розкішні VIP-місця</td>
-                        <td align="center">167 000<br> Динаміків, включаючи<br> 1 600 динаміків Holoplot X1</td>
-                    </tr>
-                </tbody>
-            </table>
-            <hr color="#0f6381" width="90%" size="3px">
-            <div class="video">
-                <video controls width="600">
-                    <source src="media/U2 - Where the Streets Have No Name.mp4" type="video/mp4">
-                </video>
-            </div>
-            <h5>U2 - Where the Streets Have No Name - Live at the Sphere 11/3/23</h5>
-            <p>MSG Sphere Las Vegas, проект Madison Square Garden, відкрився 29 вересня 2023 року для проведення спортивних подій,
-                 концертів, церемоній нагороджень, фільмів, презентацій продуктів та "світлових" шоу на вулиці.</p>
-            <p>Сфера розміром 112 метрів заввишки та 157 метрів завширшки, має 9 поверхів.</p>
-            <p>В середині встановлено найбільший у світі світлодіодний дисплей з роздільною здатністю 16K розміром 19 000 на 13 500 пікселів,
-                 який займає площу 14 864 квадратних метрів.</p>
-                 <div class="video">
-                    <video controls width="600">
-                        <source src="media/Fibonacci Day.mp4" type="video/mp4">
-                    </video>
+    <body>
+        <section class="header-banner main">
+            <header class="header">
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link active" href="#">Головна сторінка</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="description.html">Таємниці</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="foto.html">Галерея</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="event.html">Заплануйте візит</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>        
+            <main class="content">
+                <section class="banner">
+                    <h1 class="banner-title">
+                        <span class="banner-title-text main-text">MSG Sphere</span>
+                    </h1>
+                </section>
+                <section class="info">
+                    <a class="button-link" href="event.html">
+                        <button class="button">Хочу купити квитки</button>
+                    </a>
+                    <h2>MSG Сфера у Лас-Вегасі - це</h2>   
+                    <hr>                 
+                    <div class="container">
+                        <div class="fact">
+                            <h3>81 290 м²</h3>
+                            <p>Площа купола</p>
+                        </div>
+                        <div class="fact">
+                            <h3>53 884 м²</h3>
+                            <p>Розмір зовнішнього світлодіодного дисплею</p>
+                        </div>
+                        <div class="fact">
+                            <h3>14 864 м²</h3>
+                            <p>Розмір внутрішнього екрану з LED-підсвіткою, 16К дисплей</p>
+                        </div>
+                        <div class="fact">
+                            <h3>~13 000 тонн</h3>
+                            <p>Вага купола</p>
+                        </div>
+                        <div class="fact">
+                            <h3>18 600</h3>
+                            <p>Сидячих місць</p>
+                        </div>
+                        <div class="fact">
+                            <h3>20 000</h3>
+                            <p>Стоячих місць</p>
+                        </div>
+                        <div class="fact">
+                            <h3>23</h3>
+                            <p>Розкішні VIP-місця</p>
+                        </div>
+                        <div class="fact">
+                            <h3>167 000</h3>
+                            <p>Динаміків, включаючи 1 600 динаміків Holoplot X1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container2">
+                        <div class="item">
+                            <div class="image">
+                                <img src="media/foto-main1.jpg" alt="Image 1">
+                            </div>
+                            <div class="text">
+                                <p>MSG Sphere Las Vegas, проект Madison Square Garden, відкрився 29 вересня 2023 року для проведення спортивних подій,
+                                    концертів, церемоній нагороджень, фільмів, презентацій продуктів та "світлових" шоу на вулиці.</p>
+                               <p>Сфера розміром 112 метрів заввишки та 157 метрів завширшки, має 9 поверхів.</p>
+                               <p>В середині встановлено найбільший у світі світлодіодний дисплей з роздільною здатністю 16K розміром 19 000 на 13 500 пікселів,
+                                    який займає площу 14 864 квадратних метрів.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="text">
+                                <p>Це єдиний у своєму роді екран, здатний відображати приголомшливе 360-градусне зображення, яке може перенести глядачів в інший світ.
+                                    Він у 100 разів чіткіший і детальніший, ніж найкращі HD-телевізори світового класу на ринку.</p>
+                               <p>Ви можете буквально відчути, що відбувається навколо вас через вібрації та силу безпосередньо на ваших сидіннях. Низькочастотні звуки 
+                                   передаватимуться через підлогу, даючи вам відчуття того, що відбувається під вашими ногами. </p>
+                            </div>
+                            <div class="image">
+                                <img src="media/foto-main2.jpg" alt="Image 2">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+          </main> 
+          <footer>
+            <div class="footer-content">
+                <div class="social-media">
+                    <p class="bluetext">Стежити:</p>
+                    <a href="https://www.youtube.com/@SphereVegas" class="social-icon">
+                        <img src="media/youtube.svg" alt="YouTube">
+                    </a>
+                    <a href="https://www.instagram.com/SphereVegas" class="social-icon">
+                        <img src="media/tiktok.svg" alt="TikTok">
+                    </a>
+                    <a href="https://www.tiktok.com/@spherevegas" class="social-icon">
+                        <img src="media/insta.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.twitter.com/SphereVegas" class="social-icon">
+                        <img src="media/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100088764407477" class="social-icon">
+                        <img src="media/twit.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/company/msg-sphere/" class="social-icon">
+                        <img src="media/linkedin.svg" alt="Linkedin">
+                    </a>
                 </div>
-                <h5>Fibonacci Day</h5>
-            <p>Це єдиний у своєму роді екран, здатний відображати приголомшливе 360-градусне зображення, яке може перенести глядачів в інший світ.
-                 Він у 100 разів чіткіший і детальніший, ніж найкращі HD-телевізори світового класу на ринку.</p>
-            <p>Ви можете буквально відчути, що відбувається навколо вас через вібрації та силу безпосередньо на ваших сидіннях. Низькочастотні звуки 
-                передаватимуться через підлогу, даючи вам відчуття того, що відбувається під вашими ногами. </p>
-            </font>
-            </body>
+                <div class="additional-info">
+                    <p class="bluetext">Додаткова інформація:</p>
+                    <p>255 Сандс Авеню, Лас-Вегас, Невада, США</p>
+                    <a class="a-line" href="https://docs.google.com/document/d/1D5Y1I6HPFu-7lUKdwsQK_i60IDybip0kJ3ssl5sWorw/edit?usp=sharing" target="_blank">Використані джерела</a>
+                </div>
+            </div>
+            <div class="author-info">
+                <p>Сайт виготовлений в навчальних цілях<br>©2024 Lyah Anastasia</p>
+            </div>
+        </footer>           
+    </body>
 </html>
