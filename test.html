@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <script src="test.js" defer></script>
+        <title>MSG Sphere - Тест</title>
+    </head>
+    <body>
+        <section class="header-banner test-banner">
+            <header class="header">
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="main.html">Головна сторінка</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="description.html">Таємниці</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="foto.html">Галерея</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="event.html">Заплануйте візит</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link active" href="#">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>        
+            <main class="content">
+                <section class="banner">
+                    <h1 class="banner-title">
+                        <span class="banner-title-text description-text">Тест</span>
+                    </h1>
+                </section>
+                <section class="info">                
+                    <h2>Тестування про MSG Sphere</h2>   
+                    <p class="under-title">Дайте відповідь на декілька питань та перевірьте що ви запам'ятали!</p>  
+                    <form class="test" name="test">
+                        <ol>
+                            <li><b> Де розташована MSG Sphere?</b><br/>
+                                <input type="radio" value="0" name="Q1"/> Лос-Анджелес<br />
+                                <input type="radio" value="2" name="Q1"/> Нью-Йорк<br />
+                                <input type="radio" value="1" name="Q1"/> Лас-Вегас<br />
+                                <input type="radio" value="3" name="Q1"/> Київ<br />                                
+                                <span id="feedback1"></span><br/>
+                            </li>
+                            <li><b> Коли відкрилась MSG Sphere?</b><br/>
+                                <input type="radio" value="2" name="Q2"/> 29 вересня 2023 р.<br />
+                                <input type="radio" value="1" name="Q2"/> 27 вересня 2018 р.<br />
+                                <input type="radio" value="3" name="Q2"/> 10 березня 2024 р.<br />
+                                <input type="radio" value="0" name="Q2"/> Вона ще не відкрилась, це тільки в планах<br />
+                                <span id="feedback2"></span><br/>
+                            </li>
+                            <li><b> Що таке MSG Sphere?</b><br/>
+                                <input type="radio" value="0" name="Q3"/> Найбільший у світі сферичний LED-екран<br />
+                                <input type="radio" value="1" name="Q3"/> Найсучасніший розважальний комплекс у Лас-Вегасі<br />
+                                <input type="radio" value="2" name="Q3"/> Новий тип спортивної арени<br />
+                                <input type="radio" value="3" name="Q3"/> Все вищезазначене<br />
+                                <span id="feedback3"></span><br/>
+                            </li>
+                            <li><b> Які ваші враження від MSG Sphere?</b><br/>
+                                <input type="radio" value="0" name="Q4"/> Це неймовірно!<br />
+                                <input type="radio" value="1" name="Q4"/> Мені це подобається.<br />
+                                <input type="radio" value="2" name="Q4"/> Це не моє.<br />
+                                <input type="radio" value="3" name="Q4"/> Я ще не був/ла там.<br />
+                                <span class="feedback" id="feedback4"></span><br/>
+                            </li>
+                            <li><b> Чи хотіли б ви відвідати MSG Sphere?</b><br/>
+                                <input type="radio" value="0" name="Q5"/> Так, я б хотів/ла це побачити!<br />
+                                <input type="radio" value="1" name="Q5"/> Можливо, це залежить від заходу.<br />
+                                <input type="radio" value="2" name="Q5"/> Ні, мене це не цікавить.<br />
+                                <input type="radio" value="3" name="Q5"/> Я не можу собі це дозволити.<br />
+                                <span class="feedback" id="feedback5"></span><br/>
+                            </li>            
+                        </ol>                                   
+                        <div class="button-container">
+                            <button class="button test" onclick="check_me()" type="button">Перевірити результат</button>
+                            <button class="button test" type="reset" onclick="resetFeedback()">Скинути відповіді</button> 
+                        </div>                               
+                    </form>                                      
+                </section>
+          </main>  
+          <footer>
+            <div class="footer-content">
+                <div class="social-media">
+                    <p class="bluetext">Стежити:</p>
+                    <a href="https://www.youtube.com/@SphereVegas" class="social-icon">
+                        <img src="media/youtube.svg" alt="YouTube">
+                    </a>
+                    <a href="https://www.instagram.com/SphereVegas" class="social-icon">
+                        <img src="media/tiktok.svg" alt="TikTok">
+                    </a>
+                    <a href="https://www.tiktok.com/@spherevegas" class="social-icon">
+                        <img src="media/insta.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.twitter.com/SphereVegas" class="social-icon">
+                        <img src="media/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100088764407477" class="social-icon">
+                        <img src="media/twit.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/company/msg-sphere/" class="social-icon">
+                        <img src="media/linkedin.svg" alt="Linkedin">
+                    </a>
+                </div>
+                <div class="additional-info">
+                    <p class="bluetext">Додаткова інформація:</p>
+                    <p>255 Сандс Авеню, Лас-Вегас, Невада, США</p>
+                    <a class="a-line" href="https://docs.google.com/document/d/1D5Y1I6HPFu-7lUKdwsQK_i60IDybip0kJ3ssl5sWorw/edit?usp=sharing" target="_blank">Використані джерела</a>
+                </div>
+            </div>
+            <div class="author-info">
+                <p>Сайт виготовлений в навчальних цілях<br>©2024 Lyah Anastasia</p>
+            </div>
+        </footer>           
+    </body>
+</html>
