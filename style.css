@@ -162,7 +162,8 @@ a, button, input, textarea, svg * {
     justify-content: center; 
     align-items: center; 
     text-align: center;     
-    background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) -6.75%, rgb(0, 0, 0) 69.594%);
+    background: linear-gradient(180.00deg, rgba(0, 0, 0, 0)
+     -6.75%, rgb(0, 0, 0) 69.594%);
     background-size: 100% 200px; 
     background-repeat: no-repeat; 
     background-position: bottom;
@@ -198,7 +199,7 @@ a, button, input, textarea, svg * {
 .under-title {
   margin-left: 200px;
   margin-right: 200px;
-  margin-top: -20px;
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -487,9 +488,14 @@ h4 {
   text-align: left;
 }
 
+#hello {
+  color: #fff;
+  margin-top: -20px;
+}
 
-
-
+form{
+  color: #fff;
+}
 
 
  

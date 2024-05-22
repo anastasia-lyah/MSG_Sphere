@@ -37,8 +37,10 @@
                         <span class="banner-title-text description-text">Тест</span>
                     </h1>
                 </section>
-                <section class="info">                
+                <section class="info">                                   
                     <h2>Тестування про MSG Sphere</h2>   
+                    <div id="hello"></div> 
+                    <script src="text.js"></script>
                     <p class="under-title">Дайте відповідь на декілька питань та перевірьте що ви запам'ятали!</p>  
                     <form class="test" name="test">
                         <ol>
@@ -82,7 +84,20 @@
                             <button class="button test" onclick="check_me()" type="button">Перевірити результат</button>
                             <button class="button test" type="reset" onclick="resetFeedback()">Скинути відповіді</button> 
                         </div>                               
-                    </form>                                      
+                    </form>  
+                    <br><br><br>
+                    <script src="gpn.js"></script>  
+                    <form>
+                        <hr>
+                        Обчисліть вартість квитків, які ви бажаєте придбати:<br><br>
+                        Скільки квитків ви хочете придбати? <br>
+                        <input type="number" id="k1" required> квиток(-и)<br><br>
+                        Скільки коштує один квиток? <br>
+                        <input type="number" id="k2" required> грн.<br><br>
+                        <button class="button test" onclick="rez()" type="button">Обчислити</button> <br><br>
+                        <div id="textrez">Вартість квитка(-ів)</div>
+                        <hr>
+                    </form>                                 
                 </section>
           </main>  
           <footer>
