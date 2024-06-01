@@ -497,8 +497,53 @@ form{
   color: #fff;
 }
 
+.reg {
+  margin-left: 320px;
+  margin-right: 320px;
+  text-align: left; 
+  padding: 20px; 
+}
 
+.reg h2 {
+  text-align: center;
+}
+
+.reg input[type="text"],
+.reg input[type="date"],
+.reg input[type="tel"],
+.reg input[type="email"],
+.reg input[type="password"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.reg input[type="radio"],
+.reg input[type="checkbox"] {
+  margin-right: 10px;  
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+.gender-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.gender-container label {
+  margin-right: 20px;
+}
  
+#successMessage{
+  text-align: center;
+}
+
+
  *,
  *::before,
  *::after {

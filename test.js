@@ -7,7 +7,6 @@ function check_me() {
       q5: document.querySelector('input[name="Q5"]:checked') ? document.querySelector('input[name="Q5"]:checked').value : null
     };
   
-    // Перевірити, чи відповів користувач на всі запитання
     const answeredAllQuestions = Object.values(answers).every(answer => answer !== null);
 
     if (!answeredAllQuestions) {
@@ -15,10 +14,10 @@ function check_me() {
       return;
     }
   
-    // Перевірити відповіді на перші 3 питання
+
     for (let i = 1; i <= 3; i++) {
-      const feedbackElement = document.getElementById(`feedback${i}`); // Використовуйте ID
-      const correctAnswer = i === 3 ? '3' : `${i}`; // Правильні відповіді
+      const feedbackElement = document.getElementById(`feedback${i}`);
+      const correctAnswer = i === 3 ? '3' : `${i}`; 
   
       if (answers[`q${i}`] === correctAnswer) {
         feedbackElement.textContent = "Правильна відповідь!";
@@ -27,9 +26,8 @@ function check_me() {
         feedbackElement.textContent = "Неправильна відповідь.";
         feedbackElement.style.color = "red";
       }
-    }
+    }  
   
-    // Перевірити результати 4-го та 5-го питань
     if (answers.q4 !== null) {
       const feedback4Element = document.getElementById('feedback4');
       const selectedOption4 = answers.q4;
@@ -77,7 +75,7 @@ function resetFeedback() {
     for (let i = 1; i <= 5; i++) {
         const feedbackElement = document.getElementById(`feedback${i}`);
         if (feedbackElement) {
-            feedbackElement.textContent = ""; // Очистити текст
+            feedbackElement.textContent = ""; 
         }
     }
 }

@@ -40,7 +40,7 @@
                 <section class="info">                                   
                     <h2>Тестування про MSG Sphere</h2>   
                     <div id="hello"></div> 
-                    <script src="text.js"></script>
+                    <!--<script src="text.js"></script>-->
                     <p class="under-title">Дайте відповідь на декілька питань та перевірьте що ви запам'ятали!</p>  
                     <form class="test" name="test">
                         <ol>
@@ -86,7 +86,7 @@
                         </div>                               
                     </form>  
                     <br><br><br>
-                    <script src="gpn.js"></script>  
+                    <!--<script src="gpn.js"></script>  
                     <form>
                         <hr>
                         Обчисліть вартість квитків, які ви бажаєте придбати:<br><br>
@@ -97,7 +97,26 @@
                         <button class="button test" onclick="rez()" type="button">Обчислити</button> <br><br>
                         <div id="textrez">Вартість квитка(-ів)</div>
                         <hr>
-                    </form>                                 
+                    </form> -->   
+                    <form class="reg" name="reg" method="get" autocomplete="on" onsubmit="return validateForm(event)">
+                        <h2>Реєстрація</h2>
+                        Прізвище: <input type="text" id="surname" maxlength="25" required><span id="surname_error" class="error"></span><br>
+                        Ім'я: <input type="text" id="name" maxlength="25" required><span id="name_error" class="error"></span><br>
+                        Дата народження: <input type="date" id="birthdate" required><span id="birthdate_error" class="error"></span><br>
+                        Номер телефону: <input type="tel" id="phone" placeholder="+380-XX-XXX-XXXX" required><span id="phone_error" class="error"></span><br>
+                        Email: <input type="email" id="email" maxlength="256" required><span id="email_error" class="error"></span><br>
+                        Пароль: <input type="password" id="password" minlength="10" maxlength="20" required><span id="password_error" class="error"></span><br>
+                        Стать: <br>
+                        <div class="gender-container">
+                            <label>Жіноча <input type="radio" name="gender" value="female"></label>
+                            <label>Чоловіча <input type="radio" name="gender" value="male"></label>
+                            <span id="gender_error" class="error"></span>
+                        </div>
+                        <input type="checkbox" id="consent">Даю згоду на обробку персональних даних<br><span id="consent_error" class="error"></span><br>
+                        <button class="button" type="submit">Зареєструватись</button><br>
+                        <p  id="successMessage" style="display:none; color: rgb(60, 183, 60);">Ваші дані успішно збережено</p>
+                    </form>
+                    <script src="reg.js"></script>                          
                 </section>
           </main>  
           <footer>
